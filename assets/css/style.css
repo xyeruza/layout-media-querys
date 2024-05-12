@@ -1,221 +1,213 @@
-*{
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navbar2{
-    display: none;
+.navbar2 {
+  display: none;
 }
 .contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 56px 12% auto 10% 10%;
-    height: 100vh;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 12% auto 10% 10%;
+  height: 100vh;
+  grid-template-areas:
     "header"
     "aside"
     "main"
     "pagina"
     "footer";
 }
-.navbar{
-    background-color: pink !important; 
-    
-    z-index: 2 !important;
-    width: 100%;
-}
-.nav-link, a{
-    color: white !important;
-}
-.container-fluid{
-    color: white;
-}
+.navbar {
+  background-color: pink !important;
 
-header{
-    grid-area: header;
-    background-color: pink; 
+  z-index: 2 !important;
+  width: 100%;
+}
+.nav-link,
+a {
+  color: white !important;
+}
+.container-fluid {
+  color: white;
 }
 
-aside{
-    grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(231, 162, 174);  
-    
+header {
+  grid-area: header;
+  background-color: pink;
 }
 
-main{
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
-    padding-top: 10px;
-    justify-items: center;
-    overflow: auto;
-    background-color: #f3bfbf;
-
-
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(231, 162, 174);
 }
 
-.pagina{
-    grid-area: pagina;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.pagina nav  ul{
-    margin: 0px;
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding-top: 10px;
+  justify-items: center;
+  overflow: auto;
+  background-color: #f3bfbf;
 }
 
+.pagina {
+  grid-area: pagina;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagina nav ul {
+  margin: 0px;
+}
 
-.pagination li a{
-    color: rgb(231, 162, 174) !important;
+.pagination li a {
+  color: rgb(231, 162, 174) !important;
 }
 
 .page {
-    height: 25px;
+  height: 25px;
 }
 
-footer{
-    grid-area: footer;
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    justify-content: center;
+footer {
+  grid-area: footer;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.dropdown{
-    width: 100%;
+.dropdown {
+  width: 100%;
 }
 
-aside div p{
-    color: white;
-    font-size: 120%;
-    margin: 0px;
+aside div p {
+  color: white;
+  font-size: 120%;
+  margin: 0px;
 }
-.btn{
-    width: 100%;
-    padding: 0px 16px;
-    margin-bottom: 8px;
-    background: rgb(235, 164, 176);
+.btn {
+  width: 100%;
+  padding: 0px 16px;
+  margin-bottom: 8px;
+  background: rgb(235, 164, 176);
 }
-.dropdown ul{
-    width: 100%;
-}
-
-.card{
-    height: 240px;
-    width: 200px;
-    margin-bottom: 10px;
-}
-.card img{
-    height: 70%;
+.dropdown ul {
+  width: 100%;
 }
 
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    height: 20px;
-    background-color: rgb(231, 162, 174);
+.card {
+  height: 240px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.card img {
+  height: 70%;
 }
 
-.card .btn{
-    width: 70%;
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 20px;
+  background-color: rgb(231, 162, 174);
 }
 
-footer p{
-    margin: 0px;
-    color: white;
+.card .btn {
+  width: 70%;
 }
 
-footer div i{
-    color: white;
-    
+footer p {
+  margin: 0px;
+  color: white;
 }
 
-@media (min-width: 576px){
-    .contenedor{
+footer div i {
+  color: white;
+}
+
+@media (min-width: 576px) {
+  .contenedor {
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 70px auto 12%;
     height: 100vh;
     grid-template-areas:
-    "header aside"
-    "header main"
-    "footer pagina";
-    }
+      "header aside"
+      "header main"
+      "footer pagina";
+  }
 
-    header nav{
-        display: none !important;
-    }
+  header nav {
+    display: none !important;
+  }
 
-    .navbar2{
-        display: block;
-    }
+  .navbar2 {
+    display: block;
+  }
 
-    .navbar2 a{
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        font-size: 15px;
-        height: 50px;
-        align-items: center;
-    }
+  .navbar2 a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    height: 50px;
+    align-items: center;
+  }
 
-    .navbar2 i{
-        font-size: 25px;
-        margin: 0px 8px;
-    }
+  .navbar2 i {
+    font-size: 25px;
+    margin: 0px 8px;
+  }
 
-    h4{
-        color: white;
-        text-align: center;
-    }
-    .enlaces{
-        display: flex;
-        flex-direction: column;
-    }
+  h4 {
+    color: white;
+    text-align: center;
+  }
+  .enlaces {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .enlaces a:hover{
-        background-color: white;
-        color: rgb(255, 200, 200) !important;
-    }
+  .enlaces a:hover {
+    background-color: white;
+    color: rgb(255, 200, 200) !important;
+  }
 
-    main{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-        justify-items: center;
-        overflow-y: auto;
-        gap: 15px;
-    }
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    justify-items: center;
+    overflow-y: auto;
+    gap: 15px;
+  }
 
-    footer p{
-        font-size: 18px;
-        text-align: center;
-        color: white;
-    }
+  footer p {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
 
-    footer div{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
+  footer div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
-    footer div i{
-        font-size: 25px;
-        margin: 0px 8px;
-    }
-    
-    .pagina{
-        background-color: rgb(231, 162, 174);
-        
-        
-    }
+  footer div i {
+    font-size: 25px;
+    margin: 0px 8px;
+  }
 
+  .pagina {
+    background-color: rgb(231, 162, 174);
+  }
 }
